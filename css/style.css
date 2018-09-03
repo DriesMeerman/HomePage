@@ -20,7 +20,7 @@ ul, li {
   padding: 0;
 }
 a, a:link, a:visited {
-  color: #1F2326;
+  color: #8c8b85;
   text-decoration: none;
 }
 a:hover, a:active {
@@ -28,6 +28,10 @@ a:hover, a:active {
 }
 textarea {
   font-family: "Roboto", sans-serif;
+}
+
+a label {
+    cursor: pointer;
 }
 
 .background {
@@ -60,6 +64,11 @@ textarea {
               0  3px  1px -2px rgba(0, 0, 0, 0.2),
               0  1px  5px  0   rgba(0, 0, 0, 0.12);
 }
+
+li ul a {
+    color: white;
+}
+
 .button label {
   color: #ffffff;
   border-color: #ffffff;
@@ -123,6 +132,15 @@ textarea {
   height: 24px;
   padding: 13px;
 }
+
+.button > .button-content.no-pad {
+    display: block;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+}
+
 .button-container.disable .button > .button-content {
   opacity: .2 !important;
 }
@@ -183,7 +201,7 @@ textarea {
 .input-active #searchContainer {
   box-shadow: 0  0    8px  0   rgba(0,0,0,.18),
               0  8px 16px  0   rgba(0,0,0,.36);
-  transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;           
+  transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
 }
 .menu-category {
   display: flex;
@@ -220,7 +238,7 @@ textarea {
   background: transparent;
   font-size: 1.76em;
   text-align: center;
-  color: #7291a1;
+  color: #9c9c9c;
   padding: 6px 0;
   display: block;
   width: 100%;
@@ -231,12 +249,12 @@ textarea {
 .container-search input::-moz-placeholder {
   font-family: 'Product Sans', Arial, sans-serif;
 }
-.container-search input:focus {
-  border-color: transparent;
-  padding: 20px 0;
-  font-size: 2em;
-  transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;
-}
+/*.container-search input:focus {*/
+  /*border-color: transparent;*/
+  /*padding: 20px 0;*/
+  /*font-size: 2em;*/
+  /*transition: 0.2s cubic-bezier(0.4, 0.0, 0.2, 1) 0.2s;*/
+/*}*/
 .container-menu {
   margin-top: 10px;
 }
